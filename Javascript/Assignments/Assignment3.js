@@ -1,5 +1,3 @@
-"use strict";
-
 // ============================================================
 // VARIABLES AND DATA TYPES - COMPLETE EXERCISE
 // ============================================================
@@ -291,26 +289,28 @@ console.log("sym2.description:", sym2.description);
 
 console.log("\n========== EXERCISE 6 ==========");
 
-// 1. Create full name
+// Own block so these names do not clash with earlier exercises.
+{
+    // 1. Create full name
 
-const firstName = "Aisha";
-const lastName = "Khan";
+    const firstName = "Aisha";
+    const lastName = "Khan";
 
-const fullName = `${firstName} ${lastName}`;
+    const fullName = `${firstName} ${lastName}`;
 
-console.log("Full Name:", fullName);
+    console.log("Full Name:", fullName);
 
-// 2. Create email using lowercase
+    // 2. Create email using lowercase
 
-const email = `${firstName.toLowerCase()}.${lastName.toLowerCase()}@example.com`;
+    const email = `${firstName.toLowerCase()}.${lastName.toLowerCase()}@example.com`;
 
-console.log("Email:", email);
+    console.log("Email:", email);
 
-// 3. Multi-line visit confirmation
+    // 3. Multi-line visit confirmation
 
-const appointmentType = "Annual Checkup";
+    const appointmentType = "Annual Checkup";
 
-const visitConfirmation = `
+    const visitConfirmation = `
 ========================================
         VISIT CONFIRMATION
 ========================================
@@ -319,41 +319,42 @@ Email: ${email}
 Appointment: ${appointmentType}
 ========================================`;
 
-console.log(visitConfirmation);
+    console.log(visitConfirmation);
 
-// 4. Calculate total fee inside template literal
+    // 4. Calculate total fee inside template literal
 
-const consultationFee = 500;
-const labFee = 250;
+    const consultationFee = 500;
+    const labFee = 250;
 
-console.log(`\nTotal fee: ₹${consultationFee + labFee}`);
+    console.log(`\nTotal fee: ₹${consultationFee + labFee}`);
 
-// 5. Build test data
+    // 5. Build test data
 
-const baseUrl = "https://portal.sunrisehealth.example.com";
+    const baseUrl = "https://portal.sunrisehealth.example.com";
 
-const patientId = "P-1001";
+    const patientId = "P-1001";
 
-const visitDate = "2026-08-06";
+    const visitDate = "2026-08-06";
 
-// Appointment page URL
-const appointmentsPageUrl = `${baseUrl}/patients/${patientId}/appointments`;
+    // Appointment page URL
+    const appointmentsPageUrl = `${baseUrl}/patients/${patientId}/appointments`;
 
-// Patient row selector
-const patientRowSelector = `[data-patient-id="${patientId}"]`;
+    // Patient row selector
+    const patientRowSelector = `[data-patient-id="${patientId}"]`;
 
-// Expected message
-const expectedMessage = `Appointment booked for ${fullName} on ${visitDate}`;
+    // Expected message
+    const expectedMessage = `Appointment booked for ${fullName} on ${visitDate}`;
 
-// Print test data
-console.log("\nTEST DATA");
-console.log("==================");
+    // Print test data
+    console.log("\nTEST DATA");
+    console.log("==================");
 
-console.log("URL:", appointmentsPageUrl);
+    console.log("URL:", appointmentsPageUrl);
 
-console.log("Selector:", patientRowSelector);
+    console.log("Selector:", patientRowSelector);
 
-console.log("Expected message:", expectedMessage);
+    console.log("Expected message:", expectedMessage);
+}
 
 // ============================================================
 // EXERCISE 7: PAGE TEXT IS ALWAYS A STRING
